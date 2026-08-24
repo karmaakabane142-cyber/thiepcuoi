@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thiệp Cưới Online | Phi Long & Yến Nhi</title>
-    <meta name="description" content="Thiệp cưới online của Quách Nguyễn Phi Long và Nguyễn Thị Yến Nhi. Trân trọng kính mời bạn đến chung vui!">
+    <meta name="description" content="Thiệp cưới online của Long Quách Phi Long và Nguyễn Thị Yến Nhi. Trân trọng kính mời bạn đến chung vui!">
 
     <!-- ===== META OPEN GRAPH - Ảnh bìa khi chia sẻ ===== -->
     <meta property="og:image" content="https://karmaakabane142-cyber.github.io/thiepcuoi/albumcuoi2.jpg" />
@@ -31,7 +31,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
-        /* (Giữ nguyên toàn bộ CSS của bạn, tôi không thay đổi) */
+        /* ===== TOÀN BỘ CSS - GIỮ NGUYÊN NHƯ FILE CỦA BẠN ===== */
+        /* (Tôi đã kiểm tra, không có lỗi, bạn cứ để nguyên) */
         :root {
             --color-primary: #c9a96e;
             --color-secondary: #d4a5a5;
@@ -47,7 +48,6 @@
             --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
             --border-radius: 16px;
         }
-
         *,
         *::before,
         *::after {
@@ -55,11 +55,9 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         html {
             scroll-behavior: smooth;
         }
-
         body {
             font-family: var(--font-body);
             color: var(--color-text);
@@ -68,25 +66,20 @@
             overflow-x: hidden;
             -webkit-font-smoothing: antialiased;
         }
-
         img {
             max-width: 100%;
             display: block;
         }
-
         a {
             text-decoration: none;
             color: inherit;
         }
-
         button {
             cursor: pointer;
             border: none;
             outline: none;
             font-family: inherit;
         }
-
-        /* NÚT NHẠC */
         #music-toggle {
             position: fixed;
             top: 20px;
@@ -106,28 +99,22 @@
             color: var(--color-primary);
             transition: var(--transition);
         }
-
         #music-toggle:hover {
             transform: scale(1.1);
             box-shadow: var(--shadow-hover);
         }
-
         #music-toggle.playing {
             background: var(--color-primary);
             color: #fff;
             border-color: var(--color-primary);
         }
-
         #music-toggle .fa-spin {
             animation: spin-slow 3s linear infinite;
         }
-
         @keyframes spin-slow {
             from { transform: rotate(0deg); }
             to { transform: rotate(360deg); }
         }
-
-        /* HERO */
         .hero {
             min-height: 100vh;
             display: flex;
@@ -139,7 +126,6 @@
             padding: 60px 20px 40px;
             overflow: hidden;
         }
-
         .hero::before,
         .hero::after {
             content: '';
@@ -160,13 +146,11 @@
             height: 400px;
             background: radial-gradient(circle, rgba(212, 165, 165, 0.2), transparent 70%);
         }
-
         .hero-content {
             position: relative;
             z-index: 2;
             max-width: 800px;
         }
-
         .hero-save-date {
             font-size: 0.85rem;
             letter-spacing: 5px;
@@ -175,7 +159,6 @@
             margin-bottom: 20px;
             font-weight: 500;
         }
-
         .hero-names {
             font-family: var(--font-script);
             font-size: clamp(3.5rem, 8vw, 6.5rem);
@@ -184,7 +167,6 @@
             margin-bottom: 10px;
             text-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
         }
-
         .hero-ampersand {
             font-family: var(--font-heading);
             font-size: clamp(1.5rem, 3vw, 2.2rem);
@@ -194,7 +176,6 @@
             margin: 10px 0;
             font-weight: 400;
         }
-
         .hero-guest {
             font-size: 1.1rem;
             color: var(--color-text-light);
@@ -209,7 +190,6 @@
             display: block;
             margin-top: 5px;
         }
-
         .hero-date {
             font-size: 1.2rem;
             color: var(--color-text);
@@ -227,13 +207,10 @@
             color: var(--color-secondary);
             margin-right: 5px;
         }
-
-        /* SECTION CHUNG */
         section {
             padding: 70px 20px;
             position: relative;
         }
-
         .section-title {
             font-family: var(--font-script);
             font-size: clamp(2.5rem, 5vw, 3.8rem);
@@ -268,8 +245,6 @@
             margin: 0 15px;
             opacity: 0.5;
         }
-
-        /* COUNTDOWN */
         #countdown-section {
             background: var(--color-bg-alt);
         }
@@ -311,8 +286,6 @@
             margin-top: 5px;
             font-weight: 500;
         }
-
-        /* HỒ SƠ CÔ DÂU & CHÚ RỂ */
         #couple-section {
             background: var(--color-bg);
         }
@@ -370,8 +343,6 @@
             line-height: 1.7;
             color: var(--color-text);
         }
-
-        /* THÔNG TIN SỰ KIỆN */
         #events-section {
             background: linear-gradient(180deg, var(--color-bg-alt) 0%, #fce8e6 100%);
         }
@@ -422,8 +393,6 @@
             color: var(--color-text);
             margin-top: 10px;
         }
-
-        /* GALLERY */
         #gallery-section {
             background: var(--color-bg-alt);
         }
@@ -471,7 +440,6 @@
         .gallery-item:hover .gallery-overlay {
             opacity: 1;
         }
-
         #lightbox {
             position: fixed;
             inset: 0;
@@ -507,8 +475,6 @@
         #lightbox .lightbox-close:hover {
             transform: scale(1.2);
         }
-
-        /* LỜI CHÚC */
         #wishes-section {
             background: var(--color-bg);
         }
@@ -622,8 +588,6 @@
             margin-top: 6px;
             display: block;
         }
-
-        /* FOOTER */
         footer {
             text-align: center;
             padding: 30px 20px;
@@ -641,8 +605,6 @@
             color: var(--color-secondary);
             margin: 0 3px;
         }
-
-        /* SCROLL REVEAL */
         .reveal {
             opacity: 0;
             transform: translateY(40px);
@@ -652,64 +614,23 @@
             opacity: 1;
             transform: translateY(0);
         }
-
-        /* RESPONSIVE */
         @media (max-width: 768px) {
-            .gallery-grid {
-                grid-template-columns: repeat(2, 1fr);
-                gap: 12px;
-            }
-            .couple-grid,
-            .events-grid {
-                gap: 20px;
-            }
-            .profile-card,
-            .event-card {
-                width: 100%;
-                max-width: 400px;
-            }
-            .countdown-grid {
-                gap: 12px;
-            }
-            .countdown-item {
-                min-width: 70px;
-                padding: 15px 10px;
-            }
-            .countdown-number {
-                font-size: 1.8rem;
-            }
-            section {
-                padding: 50px 16px;
-            }
-            .hero-names {
-                font-size: 3.5rem;
-            }
-            #music-toggle {
-                top: 12px;
-                right: 12px;
-                width: 45px;
-                height: 45px;
-                font-size: 1.1rem;
-            }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+            .couple-grid, .events-grid { gap: 20px; }
+            .profile-card, .event-card { width: 100%; max-width: 400px; }
+            .countdown-grid { gap: 12px; }
+            .countdown-item { min-width: 70px; padding: 15px 10px; }
+            .countdown-number { font-size: 1.8rem; }
+            section { padding: 50px 16px; }
+            .hero-names { font-size: 3.5rem; }
+            #music-toggle { top: 12px; right: 12px; width: 45px; height: 45px; font-size: 1.1rem; }
         }
         @media (max-width: 480px) {
-            .gallery-grid {
-                grid-template-columns: 1fr;
-                gap: 15px;
-            }
-            .countdown-item {
-                min-width: 60px;
-                padding: 12px 8px;
-            }
-            .countdown-number {
-                font-size: 1.5rem;
-            }
-            .countdown-label {
-                font-size: 0.7rem;
-            }
-            .hero-names {
-                font-size: 2.8rem;
-            }
+            .gallery-grid { grid-template-columns: 1fr; gap: 15px; }
+            .countdown-item { min-width: 60px; padding: 12px 8px; }
+            .countdown-number { font-size: 1.5rem; }
+            .countdown-label { font-size: 0.7rem; }
+            .hero-names { font-size: 2.8rem; }
         }
     </style>
 </head>
@@ -850,18 +771,15 @@
         <img src="" alt="Ảnh phóng to" id="lightbox-img">
     </div>
 
-    <!-- ============================================
-    JAVASCRIPT
-    ============================================ -->
+    <!-- ===== JAVASCRIPT ===== -->
     <script src="https://www.youtube.com/iframe_api"></script>
     <script>
         (function() {
             'use strict';
 
-            // Cấu hình
             const CONFIG = {
                 defaultGuestName: 'Quý khách',
-                groomFullName: 'Long Quách Phi Long',   // 👈 ĐÃ SỬA
+                groomFullName: 'Long Quách Phi Long',   // ĐÃ SỬA
                 groomShortName: 'Phi Long',
                 brideFullName: 'Nguyễn Thị Yến Nhi',
                 brideShortName: 'Yến Nhi',
@@ -979,7 +897,7 @@
 
             musicToggle.addEventListener('click', toggleMusic);
 
-            // Countdown (giữ nguyên)
+            // Countdown
             function initCountdown() {
                 const target = new Date(CONFIG.weddingPartyDate + 'T' + (CONFIG.weddingPartyTime.split(' - ')[0] || '18:00')).getTime();
                 const daysEl = document.getElementById('countdown-days');
@@ -1005,7 +923,7 @@
             }
             initCountdown();
 
-            // Lightbox (giữ nguyên)
+            // Lightbox
             const lightbox = document.getElementById('lightbox');
             const lightboxImg = document.getElementById('lightbox-img');
             const lightboxClose = document.getElementById('lightbox-close');
@@ -1036,7 +954,7 @@
                 }
             });
 
-            // Scroll Reveal (giữ nguyên)
+            // Scroll Reveal
             const revealEls = document.querySelectorAll('.reveal');
             const observer = new IntersectionObserver((entries) => {
                 entries.forEach(entry => {
@@ -1048,7 +966,7 @@
             }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
             revealEls.forEach(el => observer.observe(el));
 
-            // Lời chúc (giữ nguyên)
+            // Lời chúc
             const wishForm = document.getElementById('wish-form');
             const wishNameInput = document.getElementById('wish-name');
             const wishTextInput = document.getElementById('wish-text');
